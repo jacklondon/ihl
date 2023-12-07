@@ -1,0 +1,212 @@
+/* main buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #f7941e;
+    border-color: #f7941e;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f7a61e;
+    border-color: #f7a61e;
+}
+
+/* teklif verilmiş card */
+.btn-blue {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* filter */
+.btn-trans {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-trans:hover {
+    color: #cccccc;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.c-second {
+    color: #3a3a3c;
+}
+
+.c-second:hover {
+    color: #191919;
+}
+
+.c-white {
+    color: white;
+}
+
+.c-sub {
+    color: #e5e5e5;
+}
+
+.c-red {
+    color: #c62828;
+}
+
+.c-green {
+    color: #008000
+}
+
+.c-blue{
+    color: #007bff;
+}
+
+.c-yellow {
+    color: #f7941e;
+}
+
+.c-yellow:hover {
+    color: #f7a61e;
+}
+
+.c-bold{
+    font-weight: bold;
+}
+
+/* tab contents menu */
+.c-a {
+    color: #3a3a3c;
+}
+
+.c-a:hover {
+    color: #f7941e;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #f7941e;
+}
+
+/* filtrenin altı */
+.page-shape {
+    position: absolute;
+    left: 15px;
+    bottom: -14px;
+    width: 0;
+    height: 0;
+    border-bottom: 65px solid #f7941e;
+    border-right: 380px solid transparent;
+}
+
+.page-shape-two {
+    position: absolute;
+    right: 15px;
+    bottom: -14px;
+    width: 0;
+    height: 0;
+    border-top: 65px solid #3a3a3c;
+    border-left: 380px solid transparent;
+}
+
+/* cardların gölgesi */
+.shadow {
+    box-shadow: 10px 10px 20px -15px #3a3a3c;
+}
+
+/* panel içi tablelar */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* user panel card titles */
+.my-card-title-primary {
+    float: left;
+    background-color: #f7941e;
+    color: white;
+}
+
+.my-card-title-blue {
+    float: left;
+    background-color: #007bff;
+    color: white;
+}
+
+/* tekliflerim ve favoriler */
+.non-show {
+    opacity: 0.2;
+}
+
+/* satis durumlarim */
+.admin-refuse {
+    background-color: #8e99ab;
+    color: white;
+}
+
+.live {
+    background-color: #088a3c;
+    color: white;
+}
+
+.cancel {
+    background-color: #9e0909;
+    color: white;
+}
+
+.waiting-approval {
+    background-color: #942c06;
+    color: white;
+}
+
+.sell {
+    background-color: #2f9fe0;
+    color: white;
+}
+
+/* cayma bedelleri */
+.withdrawal td {
+    background-color: #008000;
+    color: white;
+}
+
+.withdrawal-waiting td {
+    background-color: #365ddd;
+    color: white;
+}
+
+.withdrawal-close td {
+    background-color: #d51920;
+    color: white;
+}
+
+/* showcase-detail info */
+.detail-info {
+    background-color: #008000;
+    color: white;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px dashed;
+}
+
+/* carousel only bg */
+.carousel-bg {
+    background-color: #364d59;
+    height: 512px;
+    width: 1912px;
+}

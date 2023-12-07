@@ -1,0 +1,244 @@
+.website_fullwidth_slider_outer
+{
+    min-height:50px;
+    padding:15px;
+    margin-top:15px;
+    float:left;
+}
+
+.website_fullwidth_slider_title
+{
+    width:100%;
+    min-height:10px;
+    float:left;
+    font-size:17px;
+    font-weight:500;
+    color:#333;
+    margin-bottom:25px;
+}
+
+.website_fullwidth_slider_title a
+{
+    color:#333!important;
+}
+
+.website_fullwidth_slider_contnets_outer
+{
+    width:100%;
+    min-height:100px;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.website_fullwidth_slider_contents_left
+{
+    width:40px;
+    height:280px;
+    background-color:#c3c3c3;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.website_fullwidth_slider_contents_left_title
+{
+    min-width:10px;
+    height:40px;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:17px;
+    font-weight:500;
+    color:#fff;
+    white-space:nowrap;
+    letter-spacing:1.5px;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.website_fullwidth_slider_contents_btn_outer
+{
+    width:30px;
+    height:280px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.website_fullwidth_slider_contents_btn_left
+{
+    width:30px;
+    height:100px;
+    background-color:#e2e2e2;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    cursor:pointer;
+}
+
+.website_fullwidth_slider_contents_btn_right
+{
+    width:30px;
+    height:100px;
+    background-color:#e2e2e2;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    cursor:pointer;
+}
+
+.website_fullwidth_slider_boxes_outer
+{
+    flex:1;
+    height:280px;
+    overflow:hidden;
+}
+
+.website_fullwidth_slider_box
+{
+    width:175px;
+    height:280px;
+    background-color:#fff;
+    float:left;
+    border-bottom:4px solid #00a2e8;
+}
+
+.website_fullwidth_slider_box_title
+{
+    width:100%;
+    height:40px;
+    background-color:#00a2e8;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    font-weight:500;
+    color:#fff;
+    letter-spacing:0.5px;
+}
+
+.website_fullwidth_slider_box_title i
+{
+    margin-right:5px;
+    float:left;
+    margin-top:1px;
+}
+
+.website_fullwidth_slider_box_image
+{
+    width:100%;
+    height:115px;
+    float:left;
+    background-size:cover;
+    background-position:center;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.website_fullwidth_slider_box_contents
+{
+    width:100%;
+    height:121px;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.website_fullwidth_slider_box_contents h3
+{
+    width:100%;
+    font-size:13px;
+    font-weight:500;
+    color:#333;
+    text-align:center;
+    margin:0px;
+    margin-bottom:17px;
+}
+
+.website_fullwidth_slider_box_contents h4
+{
+    width:100%;
+    font-size:15px;
+    font-weight:300;
+    color:#333;
+    text-align:center;
+    margin:0px;
+}
+
+.website_fullwidth_slider_box_contents h5
+{
+    width:100%;
+    font-size:13px;
+    font-weight:500;
+    color:#333;
+    text-align:center;
+    margin:0px;
+    margin-top:8px;
+}
+
+.website_fullwidth_slider_box_orange .website_fullwidth_slider_box_title
+{
+    background-color:#ffa500!important;
+}
+
+.website_fullwidth_slider_box_orange
+{
+    border-color:#ffa500!important;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .website_fullwidth_slider_box
+    {
+        width:100%;
+    }
+}
+
+.custom_mini_slider_outer
+{
+    min-height:50px;
+    padding:25px;
+    float:left;
+}
+
+.custom_mini_slider_title_outer
+{
+    width:100%;
+    height:40px;
+    background-color:#c3c3c3;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:17px;
+    font-weight:500;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.custom_mini_slider_boxes_outer
+{
+    width:100%;
+    min-height:100px;
+    float:left;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.custom_mini_slider_boxes_contents
+{
+    flex:1;
+    height:280px;
+    overflow:hidden;
+}
+
+.custom_mini_slider_boxes_contents * .website_fullwidth_slider_box
+{
+    width:100%!important;
+}

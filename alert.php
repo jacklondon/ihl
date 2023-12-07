@@ -1,0 +1,27 @@
+ 
+<?php 
+if($_SESSION['u_token'] != ""){
+    $sistem_devam_bilgileri_cek = mysql_query("SELECT * FROM `user` WHERE user_token = '".$_SESSION['u_token']."'");
+    while($devam_etsin = mysql_fetch_array($sistem_devam_bilgileri_cek)){
+        if($devam_etsin['paket'] != 1){
+            if($devam_etsin['tc_kimlik']=="" || $devam_etsin['mail']==""  || $devam_etsin['telefon']=="" || $devam_etsin['sehir']==""|| $devam_etsin['ad']=="" || $devam_etsin['cinsiyet']==""  || $devam_etsin['kargo_adresi']==""){
+                //echo'<script>alert("Lütfen Bilgilerinizi Eksiksiz Doldurun. Yoksa işlem yapamazsınız.")</script>';
+               echo"<script>window.location.href = 'uye_panel/profili_duzenle.php';</script>";                
+            }
+        }
+    }
+}
+if($_SESSION['k_token'] != ""){
+    $sistem_devam_bilgileri_cek = mysql_query("SELECT * FROM `user` WHERE kurumsal_user_token = '".$_SESSION['k_token']."'");
+    while($devam_etsin = mysql_fetch_array($sistem_devam_bilgileri_cek)){
+        if($devam_etsin['paket'] != 1){
+            if($devam_etsin['tc_kimlik']=="" || $devam_etsin['mail']==""  || $devam_etsin['telefon']=="" || $devam_etsin['sehir']==""  || $devam_etsin['ilce']==""   || $devam_etsin['ad']=="" || $devam_etsin['cinsiyet']==""  || $devam_etsin['kargo_adresi']==""){
+                //echo'<script>alert("Lütfen Bilgilerinizi Eksiksiz Doldurun. Yoksa işlem yapamazsınız.")</script>';
+                echo"<script>window.location.href = 'kurumsal_panel/profili_duzenle.php';</script>";                
+            }
+        }
+    }
+}
+?>
+
+

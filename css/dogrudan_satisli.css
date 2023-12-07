@@ -1,0 +1,332 @@
+.ilan_karti_dis
+{
+   min-height:10px;
+   float:left;
+   margin:10px 0px;
+   padding:0px;
+}
+
+.ilan_karti_baslik
+{
+   height: 35px;
+   background-color: orange;
+   float: left;
+   padding: 0px;
+   line-height: 35px;
+   padding-left: 10px;
+   font-weight: 600;
+}
+
+.ilan_karti_icerik_dis
+{
+   min-height:20px;
+   background-color:#ffffff;
+   float:left;
+   border:1px solid #dadada;
+   border-top:0px;
+   padding:0px;
+}
+
+.ilan_karti_gorsel_dis
+{
+   width:200px;
+   float:left;
+   background-color:maroon;
+   position:relative;
+   background-position:center;
+   background-size:cover;
+}
+
+.ilan_karti_gorsel_dis:after
+{
+   content:"";
+   display:block;
+   padding-bottom:100%;
+}
+
+.ilan_karti_kod
+{
+   height: 40px;
+   float: left;
+   position: absolute;
+   left: 0px;
+   bottom: 0px;
+   background-color: gray;
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   color: #fff;
+}
+
+.ilan_karti_gorsel_icerik
+{
+   width:calc(100% - 200px);
+   min-height:200px;
+   float:left;
+   padding:10px;
+}
+
+.ilan_karti_taglar_dis
+{
+   min-height:20px;
+   float:left;
+   padding:0px;
+}
+
+.ilan_karti_tag
+{
+   min-width: 10px;
+   height: 30px;
+   float: left;
+   background-color: #f1f1f1;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   padding: 0px 8px;
+   line-height: 30px;
+   font-weight: 600;
+   font-size: 12px;
+}
+
+.ilan_karti_alt_alan
+{
+   min-height:10px;
+   float:left;
+   padding:0px;
+}
+
+.ilan_karti_notlar_dis
+{
+   min-height:10px;
+   float:left;
+   padding:0px;
+}
+
+.ilan_karti_not_baslik
+{
+   min-height:10px;
+   float:left;
+   padding:0px;
+}
+
+.ilan_karti_not_alan
+{
+   height: 75px;
+   float: left;
+   background-color: #f7f7f7;
+   float: left;
+   margin-top: 10px;
+   padding: 8px;
+   font-size: 13px;
+   overflow-y: scroll;
+   border: 1px solid #eaeaea;
+}
+
+.ilan_karti_begeni_dis
+{
+   height: 26px;
+   float: left;
+   margin-top: 5px;
+   padding: 0px;
+}
+
+.ilan_karti_begeni_dis span
+{
+   width: 26px;
+   height: 26px;
+   background-color: #e6e6e6;
+   margin-right: 10px;
+   float: left;
+   text-align: center;
+   line-height: 27px;
+   color: orange;
+   border-radius: 3px;
+}
+
+.ilan_karti_teklif_dis
+{
+   min-height:10px;
+   float:left;
+}
+
+.ilan_karti_teklif_baslik
+{
+   height: 30px;
+   float: left;
+   text-align: center;
+   line-height: 30px;
+   font-weight: 600;
+   font-size: 18px;
+}
+
+.ilan_karti_teklif_fiyat
+{
+   min-height: 20px;
+   float: left;
+   text-align: center;
+   font-size: 35px;
+   font-weight: 700;
+}
+
+.ilan_karti_teklif_btnlar
+{
+   min-height:20px;
+   float:left;
+   padding:0px;
+}
+
+.ilan_karti_teklif_btn
+{
+   width: calc(50% - 10px);
+   height: 47px;
+   float: left;
+   margin: 5px;
+   text-align: center;
+   line-height: 47px;
+   color: #ffffff;
+   border-radius: 4px;
+   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+   .ilan_karti_baslik
+   {
+      font-size:9px;
+      padding-left:5px;
+   }
+
+   .ilan_karti_gorsel_dis
+   {
+      width:100%;
+   }
+
+   .ilan_karti_gorsel_icerik
+   {
+      width:100%;
+   }
+
+   .ilan_karti_begeni_dis
+   {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:15px;
+      margin-top:15px;
+   }
+
+   .ilan_karti_begeni_dis span
+   {
+      width:35px;
+      height:35px;
+      line-height:35px;
+   }
+
+   .ilan_karti_begeni_dis span:last-child
+   {
+      margin:0px;
+   }
+}
+
+
+.multiselect {
+    width: 200px;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  .selectBox select {
+    width: 100%;
+    font-weight: bold;
+  }
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  #sehirler {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #sehirler label {
+    display: block;
+  }
+  
+  #sehirler label:hover {
+    background-color: #1e90ff;
+  }
+  #markalar {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #markalar label {
+    display: block;
+  }
+  
+  #markalar label:hover {
+    background-color: #1e90ff;
+  }
+  #tarih {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #tarih label {
+    display: block;
+  }
+  
+  #tarih label:hover {
+    background-color: #1e90ff;
+  }
+  #profil {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #profil label {
+    display: block;
+  }
+  
+  #profil label:hover {
+    background-color: #1e90ff;
+  }
+  #vites {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #vites label {
+    display: block;
+  }
+  
+  #vites label:hover {
+    background-color: #1e90ff;
+  }
+  #yakit {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #yakit label {
+    display: block;
+  }
+  
+  #yakit label:hover {
+    background-color: #1e90ff;
+  }
+  #hasar {
+    display: none;
+    border: 1px #dadada solid;
+  }
+  
+  #hasar label {
+    display: block;
+  }
+  
+  #hasar label:hover {
+    background-color: #1e90ff;
+  }
+  

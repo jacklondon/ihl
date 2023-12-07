@@ -1,0 +1,144 @@
+.resim_depo_icon{background-image:url('../images/resim_d.png'); background-repeat:no-repeat; float:right; width:18px; height:18px;}
+.foto_sec{opacity: 0; filter: alpha(opacity = 0); -ms-filter: "alpha(opacity=0)"; z-index: 10; position: absolute; width: 32px; height: 32px; cursor: pointer;}
+.resim_ustu_disi{float:left; width:70px; height:70px; background-color:#EEEEEE; margin-left:1px; margin-top:4px; cursor:pointer;}
+.resim_ustu_disi:hover{background-color:#DDDDDD;}
+.ust_resim_img{float:left; height:100%;}
+.tum_resimler_disi{height:300px; overflow:scroll; overflow-x:hidden;}
+
+.kategori_toplanan{float:left; width:49%;}
+.ek_kategorisi{float:left; padding-top:2px; padding-bottom:2px; padding-left:10px; padding-right:10px; color:white; background-color:#878787; font-size:14px; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border-radius: 2px !important; border-bottom:1px solid #585858; cursor:default; margin-right:2px; margin-bottom:2px;}
+.ek_kategorisi:hover{background-color:#686868;}
+
+.kat_acilan_alan{float:left; width:49%; background-color:#F9F9F9; position:relative; height:150px; overflow:scroll; overflow-x:hidden;}
+.kat_acilan_ekle{float:right; background-color:#42AF4F; cursor:pointer; color:white; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border-radius: 2px !important; border-bottom:1px solid #20812B; font-size:11px; padding-left:10px; padding-right:10px;}
+.kat_acilan_ekle:hover{background-color:#2B9337;}
+
+
+.kat_acildi_alani{float:left; width:97%; padding-left:3%; background-color:#F3F3F3; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; margin-bottom:1px;}
+.kat_acildi_alani:hover{background-color:#EBEBEB;}
+.kat_acildi_alani2{float:left; width:96%; padding-left:4%; background-color:#DBDBDB; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; margin-bottom:1px;}
+.kat_acildi_alani2:hover{background-color:#C5C5C5;}
+.kat_acildi_alani3{float:left; width:95%; padding-left:5%; background-color:#C1C1C1; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; margin-bottom:1px;}
+.kat_acildi_alani3:hover{background-color:#A9A9A9;}
+.kat_acildi_alani4{float:left; width:94%; padding-left:6%; background-color:#B7B7B7; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; margin-bottom:1px;}
+.kat_acildi_alani4:hover{background-color:#9F9F9F;}
+.kat_acildi_alani5{float:left; width:93%; padding-left:7%; background-color:#9D9D9D; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; margin-bottom:1px;}
+.kat_acildi_alani5:hover{background-color:#8D8D8D;}
+
+
+
+.c_ek_fiyat_dis{float:left; width:100%; margin-bottom:5px;}
+.ek_fiyat_ic{text-align:center; font-size:14px; border-bottom:1px solid #818181; color:#2A2A2A; float:left;}
+
+
+
+
+
+
+
+
+
+.ek_det_icerik{float:left; width:330px; height:20px; margin-bottom:4px;}
+.ek_det_0{float:left; width:50px;}
+.ek_det_1{float:left; width:80px;}
+.ek_det_2{float:left; width:200px;}
+.ek_oz_dis{float:left; width:90%; height:18px; margin-right:3px; border-left:1px solid #F7F7F7; border-right:1px solid #F7F7F7; border-top:1px solid #F7F7F7; border-bottom:1px solid #E1E1E1; cursor:default;}
+.ek_oz_dis:hover{border-left:1px solid #E1E1E1; border-right:1px solid #E1E1E1; border-top:1px solid #E1E1E1; border-bottom:1px solid #CDCDCD;}
+
+.ek_det_0_up{float:left; background-image:url('../images/genel/up_1.png'); width:18px; height:18px; overflow:hidden; margin-top:1px; cursor:pointer;}
+.ek_det_0_img{float:left; background-image:url('../images/genel/up_2.png'); width:18px; height:18px; overflow:hidden; margin-left:5px; margin-top:1px; cursor:pointer;}
+
+.ek_img_oz{float:left; width:100%; height:100%; cursor:pointer; opacity: 0; filter: alpha(opacity=0);}
+
+
+
+.ust_kat_secil_slc{float:left; width:220px; padding-top:4px; padding-bottom:4px; margin-right:10px;}
+
+
+
+
+
+
+
+
+.k_kategoriler_disi{float:left;}
+.k_kat_1{float:left; width:98%; padding-left:2%; background-color:#1C7EA1; color:white; font-size:12px; padding-top:1px; padding-bottom:1px; cursor:default; border-bottom:1px solid #126D8D;}
+.k_kat_1:hover{background-color:#126D8D;}
+
+.k_kat_ust_2{float:left; width:100%; border:2px solid #408AA5;}
+.k_kat_2{float:left; width:97%; padding-left:3%; background-color:#408AA5; color:white; font-size:12px; padding-top:1px; padding-bottom:1px; cursor:default; border-bottom:1px solid #126D8D;}
+.k_kat_2:hover{background-color:#126D8D;}
+
+.k_kat_ust_3{float:left; width:100%; border:2px solid #509FBB;}
+.k_kat_3{float:left; width:96%; padding-left:4%; background-color:#509FBB; color:white; font-size:12px; padding-top:1px; padding-bottom:1px; cursor:default; border-bottom:1px solid #126D8D;}
+.k_kat_3:hover{background-color:#126D8D;}
+
+.k_kat_ust_4{float:left; width:100%; border:2px solid #7DA6B5;}
+.k_kat_4{float:left; width:95%; padding-left:5%; background-color:#7DA6B5; color:white; font-size:12px; padding-top:1px; padding-bottom:1px; cursor:default; border-bottom:1px solid #126D8D;}
+.k_kat_4:hover{background-color:#126D8D;}
+
+.k_kat_ust_5{float:left; width:100%; border:2px solid #A8B6BB;}
+.k_kat_5{float:left; width:94%; padding-left:6%; background-color:#A8B6BB; color:white; font-size:12px; padding-top:1px; padding-bottom:1px; cursor:default; border-bottom:1px solid #126D8D;}
+.k_kat_5:hover{background-color:#126D8D;}
+
+
+
+.k_kat_alt_1{float:left; width:98%; padding-left:2%; background-color:#FDFDFD; color:black; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; border-bottom:1px solid #EDEDED;}
+.k_kat_alt_1:hover{background-color:#F9F9F9; color:#0B5B78;}
+
+.k_kat_alt_2{float:left; width:97%; padding-left:3%; background-color:#F5F5F5; color:black; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; border-bottom:1px solid #DFDFDF;}
+.k_kat_alt_2:hover{background-color:#E9E9E9; color:#0B5B78;}
+
+.k_kat_alt_3{float:left; width:96%; padding-left:4%; background-color:#EFEFEF; color:black; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; border-bottom:1px solid #C3C3C3;}
+.k_kat_alt_3:hover{background-color:#E3E3E3; color:#0B5B78;}
+
+.k_kat_alt_4{float:left; width:95%; padding-left:5%; background-color:#E3E3E3; color:black; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; border-bottom:1px solid #B3B3B3;}
+.k_kat_alt_4:hover{background-color:#D1D1D1; color:#0B5B78;}
+
+.k_kat_alt_5{float:left; width:94%; padding-left:6%; background-color:#DFDFDF; color:black; font-size:13px; padding-top:2px; padding-bottom:2px; cursor:default; border-bottom:1px solid #8F8F8F;}
+.k_kat_alt_5:hover{background-color:#D3D3D3; color:#0B5B78;}
+
+
+.k_kat_ekle{float:right; background-color:#42AF4F; cursor:pointer; color:white; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border-radius: 2px !important; border-bottom:1px solid #20812B; font-size:11px; padding-left:10px; padding-right:10px;}
+.k_kat_ekle:hover{background-color:#2B9337;}
+
+.k_kat_gir{float:right; background-color:#469CC1; cursor:pointer; color:white; -webkit-border-radius: 2px !important; -moz-border-radius: 2px !important; border-radius: 2px !important; border-bottom:1px solid #237597; font-size:11px; padding-left:10px; padding-right:10px; margin-right:3px;}
+.k_kat_gir:hover{background-color:#3286A9;}
+
+
+
+
+
+
+.urunler_arama_txt{float:left; width:220px; height:30px !important; margin-right:3px;}
+
+
+
+
+.l_bor{border:1px solid #B7B7B7; -webkit-border-radius: 3px !important; -moz-border-radius: 3px !important; border-radius: 3px !important;}
+
+
+.kucuk_divi2{float:left; width:8px; height:8px; position:absolute; border-left:1px solid #E1E1E1; border-right:1px solid #E1E1E1; border-top:1px solid #E1E1E1; border-bottom:1px solid #CDCDCD; margin-left:-4px; margin-top:-4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face{font-family:AbakuTLSymSansRegular;src:url(../font/abakutlsymsans-regular-AbakuTLSymSans.eot);src:url(../font/abakutlsymsans-regular-AbakuTLSymSans.eot?#iefix) format('embedded-opentype'),url(../font/abakutlsymsans-regular-AbakuTLSymSans.ttf) format('truetype'),url(../font/abakutlsymsans-regular-AbakuTLSymSans.svg#AbakuTLSymSansRegular) format('svg');font-weight:400;font-style:normal}.TL:before{font-family:AbakuTLSymSansRegular,Verdana,Arial;content:"¨";padding-right:3px}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+﻿@model PD.Entities.TeminatViewModel
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- jQueryMobileCSS - original without styling -->
+<link href="~/Assets/css/jquery.mobile-1.4.2.css" rel="stylesheet" />
+<!-- nativeDroid core CSS -->
+<link rel="stylesheet" href="~/Assets/plugins/nativedroid/css/jquerymobile.nativedroid.css" />
+<!-- nativeDroid: Light/Dark -->
+<link rel="stylesheet" href="~/Assets/plugins/nativedroid/css/jquerymobile.nativedroid.light.css" id='jQMnDTheme' />
+<!-- nativeDroid: Color Schemes -->
+<link rel="stylesheet" href="~/Assets/plugins/nativedroid/css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+<!-- jQuery / jQueryMobile Scripts -->
+
+<script src="~/Assets/js/jquery.min.js"></script>
+<script src="~/Assets/js/jquery.mobile-1.4.2.min.js"></script>
+
+<div data-role="page" data-theme='b'>
+
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+        <a href="/Account/Index" data-ajax="false"><i class='fa fa-reply-all' style=" color: #fff"></i></a>
+        <h1><a href="/Account/Index" data-ajax="false" style=" color: #fff">Teminat İade Formu</a></h1>
+    </div>
+
+    <div data-role="content">
+
+        <div class='inset'>
+            
+            @if (TempData["cmd"] != null)
+            {
+
+                if (TempData["cmd"].ToString() == "succ")
+                {
+                    <div class='message warning'>
+                        <i class='fa fa-warning'></i>
+                        <p>Belirttiğiniz bilgiler doğrultusunda Teminat bedeli iade isteğiniz 2 iş günü içinde gerçekleşecektir.</p>
+                    </div>
+                }
+                else
+                {
+                    <div class='message warning'>
+                        <i class='fa fa-warning'></i>
+                        <p>Hata oluştu lütfen müşteri yöneticiniz ile iletişime geçiniz.</p>
+                    </div>
+                }
+            }
+
+            @if (TempData["cmd"] == null)
+            {
+                <div class='message info' style="min-height: 30px!important;padding: 7px 7px 7px 55px!important;">
+                    <i class='fa fa-info' style="font-size: 30px!important;line-height: 25px!important; width:50px!important"></i>
+                    <p>Lütfen gerekli bilgileri eksiksiz doldurun.</p>
+                </div>
+            }
+        </div>
+
+        @using (Html.BeginForm("Teminat", "Account", FormMethod.Post))
+        {
+
+            <ul data-role="listview" data-inset="true">
+
+                <li data-role="fieldcontain">
+                    <label for="hesapad">Hesap Sahibi:</label>
+                    @Html.TextBoxFor(m => m.hesapad, new { @id = "hesapad", @name = "hesapad", @data_clear_btn = "true", @placeholder = ""})
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="bankadi">Banka Adı:</label>
+                    @Html.TextBoxFor(m => m.bankadi, new { @id = "bankadi", @name = "bankadi", @data_clear_btn = "true", @placeholder = "" })
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="telefon">Şube Kodu:</label>
+                    @Html.TextBoxFor(m => m.subekodu, new { @id = "subekodu", @name = "subekodu", @data_clear_btn = "true", @placeholder = "" })
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="subeadi">Şube Adı:</label>
+                    @Html.TextBoxFor(m => m.subeadi, new { @id = "subeadi", @name = "subeadi", @data_clear_btn = "true", @placeholder = "" })
+                </li>
+                <li data-role="fieldcontain">
+                    <label for="hesapno">Hesap No:</label>
+                    @Html.TextBoxFor(m => m.hesapno, new { @id = "hesapno", @name = "hesapno", @data_clear_btn = "true", @placeholder = "" })
+                </li>
+
+                <li data-role="fieldcontain">
+                    <label for="iban">IBAN Numarası:</label>
+                    @Html.TextBoxFor(m => m.iban, new { @id = "iban", @name = "iban", @data_clear_btn = "true", @placeholder = "" })
+                </li>
+
+
+
+                <li>
+                    <button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Gönder</button>
+                    <button type="reset" onclick="javascript:window.location.href='/Account/Index';" data-inline='true'><i class='lIcon fa fa-times'></i>İptal</button>
+                </li>
+            </ul>
+
+        }
+
+
+    </div>
+</div>

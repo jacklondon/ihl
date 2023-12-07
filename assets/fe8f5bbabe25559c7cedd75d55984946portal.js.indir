@@ -1,0 +1,107 @@
+﻿function refreshGrid() {
+    var grid = $('#Grid').data('tGrid');
+    grid.ajaxRequest();
+}
+function Grid_onRowSelect(e) {
+    var gridW = $(e.row).closest('.t-grid');
+    var grid = gridW.data("tGrid");
+    var row = e.row;
+    $(row).removeClass('t-state-selected');
+    if ($(row).hasClass('detail-expanded')) {
+        grid.collapseRow(row);
+        $(row).removeClass('detail-expanded');
+    } else {
+        grid.expandRow(row);
+        $(row).addClass('detail-expanded');
+    }
+}
+function setDynamicHeight(elementSelector, extraHeight) {
+    var element = $(elementSelector);
+    if (element != null && extraHeight != null && extraHeight >= 0) {
+        var windowHeight = $(window).height();
+        element.height(windowHeight - extraHeight);
+        //register on window resize
+        $(window).resize(function () {
+            var windowHeight = $(window).height();
+            element.height(windowHeight - extraHeight);
+        });
+    }
+}
+function setDynamicTopMargin(elementSelector, extraHeight) {
+    var element = $(elementSelector);
+    if (element != null && extraHeight != null && extraHeight >= 0) {
+        var windowHeight = $(window).height();
+        var elementHeight = element.height();
+        var newTopMargin = (windowHeight - elementHeight - extraHeight) / 2;
+        if (newTopMargin < 0) { newTopMargin = 0; }
+        element.css('margin-top', newTopMargin + 'px');
+        //register on window resize
+        $(window).resize(function () {
+            var windowHeight = $(window).height();
+            var elementHeight = element.height();
+            var newTopMargin = (windowHeight - elementHeight - extraHeight) / 2;
+            if (newTopMargin < 0) { newTopMargin = 0; }
+            element.css('margin-top', newTopMargin + 'px');
+        });
+    }
+}
+function showAjaxMessage() {
+    $('.copyright').addClass('hide');
+    $('.ajax-message').removeClass('hide');
+    $('.ajax-error').addClass('hide');
+}
+function hideAjaxMessage() {
+    $('.ajax-message').addClass('hide');
+    $('.ajax-error').addClass('hide');
+    $('.copyright').removeClass('hide');
+}
+function showAjaxError() {
+    $('.ajax-message').addClass('hide');
+    $('.copyright').addClass('hide');
+    $('.ajax-error').removeClass('hide');
+}
+function showAlertMessage(titleText, msgText, msgType) {
+    if (typeof(msgType) == typeof(undefined)) {
+        msgType = "error";
+    }
+    var msgHtml = '<br/><div style="text-align:center;width:250px;vertical-align:middle;">'
+    if (msgType == "error") {
+        msgHtml += '<img src="/Content/Images/false.png"/>&nbsp;&nbsp;';
+    } else if (msgType == "success") {
+        msgHtml += '<img src="/Content/Images/true.png"/>&nbsp;&nbsp;';
+    }
+    msgHtml += msgText + '</div><br/>';
+
+
+    var alertWindowElement = $.telerik.window.create({
+        title: titleText,
+        html: msgHtml,
+        contentUrl: "",
+        actions: ["Close"],
+        modal: true,
+        resizable: false,
+        draggable: true,
+        scrollable: false,
+        onClose: function () { }
+    });
+    var winData = alertWindowElement.data('tWindow');
+    winData.center();
+	winData.open();
+}
+
+$(function () {
+    $.ajaxSetup({
+        error: function (jqXHR, exception) {
+            //in order to suppress error alert
+        }
+    });    
+    
+    $(".ajax-message").bind("ajaxStart", function () {
+        showAjaxMessage();
+    }).bind("ajaxSuccess", function () {
+        hideAjaxMessage();
+    }).bind("ajaxError", function () {
+        showAjaxError();
+    });
+
+});
